@@ -1,0 +1,11 @@
+node_modules/
+dist/
+test-results/
+*.log
+.env
+.env.*
+!.env.example
+MixCloud.txt
+*.pem
+*.key
+*.pfx

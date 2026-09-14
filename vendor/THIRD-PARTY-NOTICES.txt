@@ -1,0 +1,17 @@
+MixDesk bundles the official Windows x64 yt-dlp.exe release 2026.08.19.
+The executable is unmodified; see SHA256SUMS for its checksum.
+
+Upstream project and release:
+https://github.com/yt-dlp/yt-dlp
+https://github.com/yt-dlp/yt-dlp/releases/tag/2026.08.19
+
+yt-dlp source code is released under the Unlicense (LICENSE.yt-dlp.txt).
+The official PyInstaller executable includes third-party GPLv3+ code;
+the combined executable is distributed under GPLv3 or later.
+See LICENSE.GPL-3.0.txt and the upstream distribution and build documentation:
+https://github.com/yt-dlp/yt-dlp/blob/2026.08.19/README.md#license
+https://github.com/yt-dlp/yt-dlp/tree/2026.08.19
+https://github.com/yt-dlp/yt-dlp/archive/refs/tags/2026.08.19.tar.gz
+
+yt-dlp runs as a separate command-line process. MixDesk's own source is MIT.
+Electron and Chromium license notices accompany their runtime in this package.

@@ -1,0 +1,7 @@
+{
+  "note": "Przykładowy model danych do developmentu; nie jest wczytywany jako prawdziwa biblioteka.",
+  "items": [
+    { "key": "/example/evening-session/", "name": "Evening Session", "creator": "Example Creator", "url": "https://www.mixcloud.com/example/evening-session/", "duration": 3600, "tags": ["Ambient"], "image": "", "kind": "show" }
+  ],
+  "next": null
+}
