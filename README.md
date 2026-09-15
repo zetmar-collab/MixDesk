@@ -1,4 +1,5 @@
 # MixDesk — odtwarzacz Mixcloud dla Windows
+![Logo](https://github.com/zetmar-collab/MixDesk/blob/main/docs/ChatGPT%20Image%2015%20wrz%202026%2C%2004_26_12.png)
 
 Gotowy program: **`dist/MixDesk.exe`**. To aplikacja Windows x64 z własną ikoną; nie wymaga instalowania Node.js, Pythona ani yt-dlp. Silnik yt-dlp jest dołączony do EXE i można aktualizować go w ustawieniach.
 
