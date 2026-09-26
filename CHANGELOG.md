@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Budowanie pakietów MSIX dla Microsoft Store i lokalnych testów podpisanych zainstalowanym certyfikatem.
+
 ## 1.0.0 — 2026-09-14
 
 - Własny interfejs Windows: polski i angielski, motyw jasny i ciemny.

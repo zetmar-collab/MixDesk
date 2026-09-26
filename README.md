@@ -5,6 +5,16 @@ Gotowy program: **`dist/MixDesk.exe`**. To aplikacja Windows x64 z własną ikon
 
 **[Pobierz MixDesk.exe dla Windows](https://github.com/zetmar-collab/MixDesk/releases/latest/download/MixDesk.exe)** · [Wydania i sumy kontrolne](https://github.com/zetmar-collab/MixDesk/releases)
 
+## Microsoft Store i MSIX
+
+Pakiety x64 o tożsamości `MarekZettel-zetmar.MixDesk` tworzy polecenie `npm run build:msix`. Wyniki są w `dist/msix/`:
+
+- `MixDesk_1.0.0.0_x64_Store.msix` — bez podpisu, do przesłania w Partner Center dla produktu `9NL2G09SQMB4`.
+- `MixDesk_1.0.0.0_x64_TestSigned.msix` — podpisany zainstalowanym lokalnie certyfikatem testowym, do testów na tym komputerze.
+- `SHA256SUMS.txt` — sumy kontrolne obu plików.
+
+Microsoft Store podpisuje przesłany pakiet MSIX podczas publikacji. Wersja bez podpisu zachowuje tożsamość sklepową i nie jest przeznaczona do lokalnej instalacji. Do testowania użyj wersji podpisanej, np. `Add-AppxPackage -Path .\dist\msix\MixDesk_1.0.0.0_x64_TestSigned.msix`. Na innym komputerze trzeba najpierw zaufać certyfikatowi publicznemu; prywatny klucz i plik PFX nie są dołączane. Wersja testowa ma tę samą zawartość i tożsamość co pakiet do sklepu, różni się jedynie podpisem. [Instrukcje budowania i wymagania](docs/MSIX.md).
+
 ## Pierwsze uruchomienie
 
 1. Uruchom `MixDesk.exe` dwukrotnym kliknięciem.

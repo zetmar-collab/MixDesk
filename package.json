@@ -11,7 +11,8 @@
     "test:ui": "node tests/ui.cjs",
     "build": "electron-builder --win portable --x64",
     "pack": "electron-builder --dir --win --x64",
-    "test:live": "node tests/live.cjs"
+    "test:live": "node tests/live.cjs",
+    "build:msix": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-msix.ps1"
   },
   "devDependencies": {
     "electron": "44.3.0",

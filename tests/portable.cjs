@@ -8,7 +8,7 @@ const assert = require('node:assert/strict');
 (async()=>{
  const server=net.createServer(); await new Promise(r=>server.listen(0,'127.0.0.1',r));const port=server.address().port;await new Promise(r=>server.close(r));
  const env={...process.env,MIXDESK_TEST_DATA:path.resolve('test-results/portable-profile')};delete env.ELECTRON_RUN_AS_NODE;
- const child=spawn(path.resolve('dist/MixDesk.exe'),[`--remote-debugging-port=${port}`],{env,windowsHide:true,stdio:'ignore'});
+ const child=spawn(path.resolve(process.env.MIXDESK_EXECUTABLE || 'dist/MixDesk.exe'),[`--remote-debugging-port=${port}`],{env,windowsHide:true,stdio:'ignore'});
  let browser;
  try {
   for(let i=0;i<120;i++){try{browser=await chromium.connectOverCDP(`http://127.0.0.1:${port}`,{timeout:500});break;}catch{await new Promise(r=>setTimeout(r,250));}}
